@@ -3,7 +3,7 @@
 
 import shodan
 
-def main:
+def main():
     api = shodan.Shodan('API_Key')
     try:
     	res = api.search("redis port:\"6379\" country:\"US\"")
