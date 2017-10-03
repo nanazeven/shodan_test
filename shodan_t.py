@@ -4,7 +4,7 @@
 import shodan
 
 def main:
-    api = shodan.Shodan('82IESk6o76nJnPOl0mnm89fvSGHgpSGH')
+    api = shodan.Shodan('API_Key')
     try:
     	res = api.search("redis port:\"6379\" country:\"US\"")
     	print(res['total'])
@@ -13,5 +13,6 @@ def main:
     			fo.write(res['ip_str'])
     except shodan.APIError as e:
     	print(e)
+
 
 
