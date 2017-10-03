@@ -13,6 +13,9 @@ def main:
     			fo.write(res['ip_str'])
     except shodan.APIError as e:
     	print(e)
-
+        
+        
+if __name__ == '__main__':
+	main()
 
 
